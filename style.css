@@ -1,0 +1,319 @@
+:root {
+  --clr-primary-100: hsl(216, 53%, 9%);
+  --clr-primary-200: hsl(217, 28%, 15%);
+  --clr-primary-300: hsl(218, 28%, 13%);
+  --clr-primary-400: hsl(219, 30%, 18%);
+  --clr-accent-100: hsl(176, 68%, 64%);
+  --clr-accent-200: hsl(198, 60%, 50%);
+  --clr-neutral: hsl(0, 0%, 100%);
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  ||  General Styles  ======================================================*/
+body {
+  color: var(--clr-neutral);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral);
+}
+
+li {
+  list-style: none;
+}
+
+/*  ||  Base Styles ========================================================*/
+header {
+  background-color: var(--clr-primary-200);
+  background-image: url("./images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+main {
+  background-color: var(--clr-primary-300);
+}
+
+footer {
+  background-color: var(--clr-primary-100);
+  padding-block: 15rem 2rem;
+}
+
+/*  ||  Typography  ==========================================================*/
+.heading {
+  font-size: 2rem;
+}
+
+.sub-heading {
+  font-size: 1.25rem;
+}
+
+.heading,
+.sub-heading {
+  font-family: var(--ff-heading);
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.875rem;
+}
+
+.intro-text {
+  font-size: 1rem;
+}
+
+/* || Utilities ============================================================*/
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+section {
+  padding-block: 2rem;
+}
+
+/* || Navigation  ============================================================*/
+.navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-block: 2em;
+}
+
+.logo {
+  width: 100px;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2em;
+}
+
+/* || Page Layout ============================================================*/
+.intro {
+  text-align: center;
+}
+
+.card {
+  padding-block: 2em;
+  padding-inline: 1em;
+  text-align: center;
+}
+
+.card-image {
+  margin-block: 2rem;
+}
+
+.testimonial {
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  margin: 5rem 1.5rem;
+}
+
+.testimonial-card {
+  background-color: var(--clr-primary-400);
+  margin-bottom: 2rem;
+  padding: 2em 1.5em;
+}
+
+.user-info {
+  display: flex;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.user-image {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 50px;
+}
+
+.sign-up {
+  background-color: var(--clr-primary-200);
+  text-align: center;
+  padding: 3em 1.5em;
+  position: relative;
+  /* margin-bottom: -40%; */
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+/* .social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .social__item {
+  margin-inline: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clr-neutral);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+} */
+
+/* || Page Elements ==========================================================*/
+.btn {
+  color: var(--clr-neutral);
+  padding: 1rem 5rem;
+  display: inline-block;
+  margin-block: 2rem;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    var(--clr-accent-100),
+    var(--clr-accent-200)
+  );
+}
+
+input {
+  padding: 1rem 2rem;
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+}
+
+.cta {
+  color: var(--clr-accent-100);
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.sign-up .btn {
+  width: 100%;
+}
+
+/* .contact-info {
+  display: flex;
+  align-items: center;
+} */
+
+/* .icon {
+  margin-right: 2em;
+} */
+
+/* Media Queries =============================================================*/
+@media (min-width: 620px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .intro {
+    width: 45%;
+    margin-inline: auto;
+  }
+
+  header {
+    background-image: url("./images/bg-curvy-desktop.svg");
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card {
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .stay-productive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    margin-inline: 1rem;
+  }
+
+  .sign-up {
+    width: 60%;
+    margin-inline: auto;
+    padding: 1.5em 3em;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+
+  .form-btn {
+    align-self: flex-end;
+  }
+
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
