@@ -1,13 +1,10 @@
-*,
 *::before,
-*::after {
+*::after,
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-/* hsl(217, 28%, 15%) 
-sl(218, 28%, 13%)
-*/
 
 :root {
   --clr-primary-100: hsl(216, 53%, 9%);
@@ -68,15 +65,12 @@ h2 {
   font-size: 1.125rem;
 }
 
-.intro-text {
-  font-size: 1rem;
-}
-
 /* || Utilities ============================================================*/
 .container {
   padding-inline: 2rem;
   margin-inline: auto;
 }
+
 .btn {
   color: var(--clr-neutral);
   padding: 1rem 5rem;
@@ -168,6 +162,10 @@ main {
 
 .intro {
   text-align: center;
+}
+
+.intro p {
+  font-size: 14.5px;
 }
 
 .feature-card {
