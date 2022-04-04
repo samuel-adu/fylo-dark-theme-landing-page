@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -24,19 +21,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>
-      Frontend Mentor | Fylo landing page with dark theme and features grid
-    </title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
@@ -236,37 +227,63 @@
 
     <footer>
       <div class="container">
-        <img src="images/logo.svg" alt="" class="footer-logo" />
+        <div>
+          <img src="images/logo.svg" alt="" class="footer-logo" />
+        </div>
 
         <div class="footer">
-          <div class="contact-info">
-            <p class="location">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+          <div class="contact">
+            <div class="location">
+              <div class="icon">
+                <img
+                  src="images/icon-location.svg"
+                  alt="location"
+                  class="location-icon"
+                />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
 
-            <div class="contact">
-              <p class="phone">+1-543-123-4567</p>
-              <p class="email">example@fylo.com</p>
+            <div class="center-align">
+              <div class="phone">
+                <div class="icon">
+                  <img src="images/icon-phone.svg" alt="phone" />
+                </div>
+                <p>+1-543-123-4567</p>
+              </div>
+
+              <div class="email">
+                <div class="icon">
+                  <img src="images/icon-email.svg" alt="email" />
+                </div>
+                <p>example@fylo.com</p>
+              </div>
             </div>
           </div>
 
-          <div class="footer-nav">
-            <ul>
-              <li>About Us</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Blog</li>
-            </ul>
+          <div class="links">
+            <div class="link-1">
+              <ul>
+                <li>About Us</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>Blog</li>
+              </ul>
+            </div>
 
-            <ul>
-              <li>Contact Us</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
+            <div class="link-2">
+              <ul>
+                <li>Contact Us</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
+          <div class="socials">
             <ul class="social__list">
               <li class="social__item">
                 <i class="fa-brands fa-twitter"></i>
@@ -281,15 +298,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by
-        <a href="#"> Samuel Adu</a>.
-      </p> -->
     </footer>
   </body>
 </html>
